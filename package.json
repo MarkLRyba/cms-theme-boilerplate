@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Boilerplate project for building websites on the HubSpot CMS",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint src && prettier --list-different 'src/**/*.js' 'src/**/*.json'",
+    "prettier:write": "prettier --write 'src/**/*.js' 'src/**/*.json'"
   },
   "repository": {
     "type": "git",
@@ -13,12 +14,17 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "@hubspot/cms-cli": "0.0.23",
+    "acorn": "^7.0.0",
+    "autoprefixer": "^9.6.1",
+    "css-mqpacker": "^7.0.0",
     "eslint": "^6.3.0",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.5",
     "js-yaml": "^3.13.1",
+    "postcss-import": "^12.0.1",
+    "postcss-pxtorem": "^4.0.1",
+    "precss": "^4.0.0",
     "prettier": "^1.18.2"
-  },
-  "scripts": {
-    "lint": "eslint src && prettier --list-different 'src/**/*.js' 'src/**/*.json'",
-    "prettier:write": "prettier --write 'src/**/*.js' 'src/**/*.json'"
   }
 }

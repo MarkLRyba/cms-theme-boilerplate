@@ -123,3 +123,10 @@ typings/
 # HubSpot configs
 hubspot.config.yaml
 hubspot.config.yml
+
+# Test / Work Folder
+test/
+
+# Assets folder for local use
+# *NOTE* REMOVE ONCE LOCAL ASSET FEATURE ADDED
+assets/
